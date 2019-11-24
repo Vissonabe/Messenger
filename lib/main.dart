@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/ConversationPageList.dart';
+import 'pages/ConversationPageSlide.dart';
+import 'config/Palette.dart';
 
 void main() => runApp(Messio());
 
@@ -10,9 +11,12 @@ class Messio extends StatelessWidget {
     return MaterialApp(
       title: 'Messio',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Palette.primaryColor,
+        primaryColorLight: Colors.grey,
+        accentColor: Palette.accentColor,
       ),
-      home: ConversationPageList(),
+      debugShowCheckedModeBanner: false,
+      home: ConversationPageSlide(),
     );
   }
 }
