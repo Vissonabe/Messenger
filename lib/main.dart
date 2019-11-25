@@ -9,7 +9,7 @@ class Messio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Messio',
+      title: 'Messio App',
       theme: ThemeData(
         primaryColor: Palette.primaryColor,
         primaryColorLight: Colors.grey,
